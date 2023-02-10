@@ -402,7 +402,7 @@ Config: 313
         )
 
     elif selected_code == "4-6351-17":
-        st.header("ArrowHQ - Verizon - CAN")
+        st.header("ArrowHQ - Verizon - non-CAN")
 
         st.subheader("103")
         st.markdown("Upload")
@@ -422,11 +422,11 @@ Config: 320
         st.markdown("NetSuite Sales Kits")
         st.code(
             """
-    8-6351-17 - ArrowHQ - Verizon with CAN - 5-wire Harness
-8-6353-17 - ArrowHQ - Verizon with CAN - OBD Harness (3-2009)
-8-6355-17 - ArrowHQ - Verizon with CAN - Universal Domestic
-8-6357-17 - ArrowHQ - Verizon with CAN - Universal Import
-8-6359-17 - ArrowHQ - Verizon with CAN - Device Only
+    8-6351-17 - ArrowHQ - Verizon without CAN - 5-wire Harness
+8-6353-17 - ArrowHQ - Verizon without CAN - OBD Harness (3-2009)
+8-6355-17 - ArrowHQ - Verizon without CAN - Universal Domestic
+8-6357-17 - ArrowHQ - Verizon without CAN - Universal Import
+8-6359-17 - ArrowHQ - Verizon without CAN - Device Only
     """
         )
 
