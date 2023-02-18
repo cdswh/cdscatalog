@@ -12,7 +12,6 @@ st.set_page_config(layout="wide")
 
 hide_streamlit_style = """
             <style>
-            MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
             </style>
             """
@@ -123,7 +122,7 @@ Config: 772
         st.markdown("Tracker / QA Script")
         st.code(
             """
-    4-6341-820 - ArrowVI - Gemtek with CAN
+    4-6341-820 - ArrowVI - Gemtek without CAN
 - With 5-wire Harness - Config 330
     
     """
@@ -132,7 +131,7 @@ Config: 772
         st.markdown("NetSuite Sales Kits")
         st.code(
             """
-1-6341-820 - EvoTrackVI with 5 wire Harness (without CAN)
+1-6541-820 - Ryken Powered with 5 wire Harness (without CAN)
         """
         )
 
@@ -181,9 +180,9 @@ Config: 771
         st.markdown("NetSuite Sales Kits")
         st.code(
             """
-    1-6340-220 - EvoVI Gemtek with 5 wire Harness - AerisPro
-1-6343-220 - EvoVI Gemtek with Buzzer Harness - AerisPro
-1-6342-220 - EvoVI Gemtek with VIN-Verify Harness - AerisPro
+    1-6340-220 - Arrow 6 Gemtek w CAN w 5-wire Harness AP
+1-6343-220 - Arrow 6 Gemtek w CAN/Buzzer Harness AP
+1-6342-220 - ArrowVI Gemtek VV - AP
         """
         )
 
@@ -200,7 +199,7 @@ Config: 771
         st.markdown("NetSuite Sales Kits")
         st.code(
             """
-1-6340-820 - EvoVI Gemtek with 5 wire Harness - AerisPro
+1-6540-820 - Ryken Powered Gemtek with 5 wire Harness - AerisPro
         """
         )
 
@@ -313,7 +312,8 @@ Config: 314
         st.code(
             """
     1-6340-10 - EvoVI Gemtek with 5 wire Harness - T-Mobile
-1-6342-10 - EvoVI Gemtek with OBD Harness - T-Mobile
+1-6342-10 - ArrowVI Gemtek VV - TMobile
+1-6343-10 - Arrow 6 Gemtek w CAN/Buzzer Harness TM
 1-6347-10 - EvoVI Gemtek - Device Only - T-Mobile
         """
         )
@@ -360,6 +360,7 @@ Config: 313
 8-6352-17 - ArrowHQ - Verizon with CAN - OBD Harness (3-2033)
 8-6354-17 - ArrowHQ - Verizon with CAN - Universal Domestic
 8-6356-17 - ArrowHQ - Verizon with CAN - Universal Import
+8-6332-17 - ArrowHQ - Verizon with CAN - Honda
 8-6358-17 - ArrowHQ - Verizon with CAN - Device Only
     """
         )
@@ -378,9 +379,10 @@ Config: 313
         st.markdown("NetSuite Sales Kits")
         st.code(
             """
-    1-6350-17 - EvoVI with 5 wire Harness - Verizon
-1-6352-17 - EvoVI with OBD Harness - Verizon
-1-6358-17 - EvoVI - Device Only - Verizon
+    1-6350-17 - EvoQH with CAN with 5 wire Harness - Verizon
+1-6352-17 - EvoQH with CAN with OBD Harness - Verizon
+1-6353-17 - EvoQH with CAN with CAN with Buzzer - Verizon
+1-6358-17 - EvoQH with CAN - Device Only - Verizon
         """
         )
 
@@ -397,12 +399,12 @@ Config: 313
         st.markdown("NetSuite Sales Kits")
         st.code(
             """
-1-6550-17 - EvoTrackVI with 5 wire Harness - Verizon
+1-6550-17 - RykenpoweredQH with 5 wire Harness - Verizon
         """
         )
 
     elif selected_code == "4-6351-17":
-        st.header("ArrowHQ - Verizon - non-CAN")
+        st.header("ArrowHQ - Verizon - without CAN")
 
         st.subheader("103")
         st.markdown("Upload")
@@ -423,6 +425,7 @@ Config: 320
         st.code(
             """
     8-6351-17 - ArrowHQ - Verizon without CAN - 5-wire Harness
+8-6333-17 - ArrowHQ - Verizon without CAN - Honda
 8-6353-17 - ArrowHQ - Verizon without CAN - OBD Harness (3-2009)
 8-6355-17 - ArrowHQ - Verizon without CAN - Universal Domestic
 8-6357-17 - ArrowHQ - Verizon without CAN - Universal Import
@@ -483,10 +486,11 @@ Config: 320
     Product Code: 4-8502-220
 
 REVO ONE - Config 387
-REVO SmartStop - Config 388
+REVO SmartStop-3K - Config 388
 REVO 3000 - Config 389
 REVO 4000 - Config 390
 REVO 5000 - Config 391
+REVO SmartStop-5K - Config 395
     """
         )
 
@@ -494,10 +498,12 @@ REVO 5000 - Config 391
         st.code(
             """
     REVO ONE - 1-8411-220-1012
-Revo SmartStop - 1-8421-220-1018
+Revo SmartStop-3K - 1-8421-220-1018
+Revo SmartStop-5K - 1-8423-210-1036
 Revo 3000 - 1-8431-220-1042
 Revo 4000 - 1-8441-220-1054
 Revo 5000 - 1-8451-220-1066
+
         """
         )
 
@@ -542,10 +548,11 @@ Revo 5000 - 1-8451-820-1066
     Product Code: 4-8502-210
 
 REVO ONE - Config 351
-REVO SmartStop - Config 354
+REVO SmartStop-3K - Config 354
 REVO 3000 - Config 357
 REVO 4000 - Config 360
 REVO 5000 - Config 363
+REVO SmartStop-5K - Config 394
     """
         )
 
@@ -553,10 +560,11 @@ REVO 5000 - Config 363
         st.code(
             """
     REVO ONE - 1-8411-210
-REVO SmartStop - 1-8421-210
+REVO SmartStop-3K - 1-8421-210
 REVO 3000 - 1-8431-210
 REVO 4000 - 1-8441-210
 REVO 5000 - 1-8451-210
+REVO SmartStop-5K - 1-8423-210
         """
         )
 
@@ -673,7 +681,6 @@ Config: 318
 1-6369-810-1001 - EvoTrack-WR (DO)
         """
         )
-
 
 if authentication_status == False:
     st.error("Username/password is incorrect")
